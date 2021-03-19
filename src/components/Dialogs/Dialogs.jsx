@@ -1,7 +1,7 @@
 import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
 import DialogItem from "./DialogItem/DialogItem";
-import MessageItem from "./DialogItem/MessageItem";
+import MessageItem from "./MessageItem/MessageItem";
 
 const Dialogs = (props) => {
 
