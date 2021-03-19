@@ -1,5 +1,7 @@
 import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
+import DialogItem from "./DialogItem/DialogItem";
+import MessageItem from "./DialogItem/MessageItem";
 
 const Dialogs = (props) => {
 
@@ -17,38 +19,22 @@ const Dialogs = (props) => {
         {id: 4, message: 'Prevet'},
     ]
 
-    let dialogs = users.map(d => <Dialog name={d.name} id={d.id}/>);
+    let Dialogs = users.map(d => <DialogItem name={d.name} id={d.id}/>);
 
-    let message = messages.map(m => <Message message={m.message}/>);
+    let Messages = messages.map(m => <MessageItem message={m.message}/>);
 
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs.users}>
                 Dialogs
-                { dialogs }
+                { Dialogs }
             </div>
             <div className={s.dialogs.messages}>
                 Messages
-                { message }
+                { Messages }
             </div>
         </div>
     );
 }
 
-const Dialog = (props) => {
-    let path = '/dialogs/' + props.id;
-    return (
-        <div>
-            <NavLink to={path} activeClassName={s.active}>{props.name}</NavLink>
-        </div>
-    );
-}
-
-const Message = (props) => {
-    return (
-        <div>
-            {props.message}
-        </div>
-    );
-}
 export default Dialogs;

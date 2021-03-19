@@ -1,6 +1,6 @@
 import s from './Content.module.css';
-import Profile from "./Profile";
-import MyPosts from "./MyPosts";
+import Profile from "./Profile/Profile";
+import MyPosts from "./MyPosts/MyPosts";
 
 const Content = () => {
     return (
