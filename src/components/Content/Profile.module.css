@@ -1,0 +1,26 @@
+.profile {
+    display: grid;
+    grid-template-areas:
+            "a n"
+            "i i";
+    grid-template-columns: 70px 10fr;
+    color: azure;
+    padding: 10px;
+}
+
+.profile img {
+    grid-area: a;
+    grid-template-columns: 75px 10fr;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid rgb(202, 224, 248);
+}
+
+.name {
+    vertical-align: middle;
+    grid-area: n;
+}
+.item {
+    grid-area: i;
+}

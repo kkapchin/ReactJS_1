@@ -1,0 +1,8 @@
+.dialogs {
+    grid-area: c;
+    background-color: dimgrey;
+}
+
+.dialogs img {
+    width: 350px;
+}
