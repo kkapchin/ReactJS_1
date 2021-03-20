@@ -7,7 +7,7 @@ const Content = (props) => {
         <div>
             <img src="https://vignette2.wikia.nocookie.net/alienfilmspedia/images/4/48/USCSS_Nostromo_002.jpg/revision/latest?cb=20111224171809" alt=""/>
             <Profile />
-            <MyPosts posts={props.posts}/>
+            <MyPosts posts={props.state.posts}/>
         </div>
     );
 }

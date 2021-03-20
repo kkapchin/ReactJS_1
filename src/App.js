@@ -15,17 +15,12 @@ class App extends Component {
             <BrowserRouter>
                 <div className="app-wrapper">
                     <Header/>
-                    <Navbar navbar={this.props.navbar}/>
+                    <Navbar state={this.props.state.sidebar}/>
                     <div className="app-wrapper-content">
                         <Route path='/profile' render={() =>
-                            <Content
-                                posts={this.props.posts}
-                            />}/>
+                            <Content state={this.props.state.profilePage} />}/>
                         <Route path='/dialogs' render={props =>
-                            <Dialogs
-                                messages={this.props.messages}
-                                dialogs={this.props.dialogs}
-                            />}/>
+                            <Dialogs state={this.props.state.messagesPage} />}/>
                         <Route path='/news' component={News}/>
                         <Route path='/projects' component={Projects}/>
                         <Route path='/settings' component={Settings}/>

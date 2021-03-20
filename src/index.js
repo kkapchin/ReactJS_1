@@ -3,44 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Dialogs from "./components/Dialogs/Dialogs";
+import state from './Redux/state';
 
-let messages = [
-    {id: 1, message: 'Zdarowa bichixi'},
-    {id: 2, message: 'qq yopta'},
-    {id: 3, message: 'Just Fun'},
-    {id: 4, message: 'Prevet'},
-];
-
-let dialogs = [
-    {id: 1, name: 'Madarka'},
-    {id: 2, name: 'Bloody'},
-    {id: 3, name: 'Dedist'},
-    {id: 4, name: 'Ferich'}
-];
-
-let posts = [
-    {id: 3, message: 'qq yopta', likesCount: 1},
-    {id: 2, message: 'All cops are bitches', likesCount: 666},
-    {id: 1, message: 'Hello world', likesCount: 13},
-];
-
-let navbar = [
-    {path: '/profile', title: 'Profile'},
-    {path: '/dialogs', title: 'Messenger'},
-    {path: '/news', title: 'News'},
-    {path: '/projects', title: 'Projects'},
-    {path: '/settings', title: 'Settings'}
-];
 
 ReactDOM.render(
   <React.StrictMode>
-    <App
-        messages={messages}
-        dialogs={dialogs}
-        posts={posts}
-        navbar={navbar}
-    />
+    <App state={state} />
   </React.StrictMode>,
   document.getElementById('root')
 );
