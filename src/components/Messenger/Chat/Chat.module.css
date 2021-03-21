@@ -1,0 +1,18 @@
+.chat {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.input {
+    float: bottom;
+    align-self: end;
+}
+
+.inputArea {
+    grid-row: 2/3;
+}
+
+.btn {
+    grid-row: 3/3;
+    margin-bottom: 5px;
+}

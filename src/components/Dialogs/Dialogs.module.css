@@ -1,7 +1,0 @@
-.dialogs {
-    grid-area: c;
-    background-color: dimgrey;
-    display: grid;
-    grid-template-columns: 2fr 10fr;
-    padding: 10px;
-}

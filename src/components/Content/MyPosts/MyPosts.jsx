@@ -1,6 +1,6 @@
 import React from 'react';
 import Post from "./Post/Post";
-
+import s from './MyPosts.module.css';
 
 const MyPosts = (props) => {
 
@@ -15,10 +15,10 @@ const MyPosts = (props) => {
 
     return (
         <div>
-            <div>
+            <div className={s.input}>
                 <textarea ref={newPostElement} cols="60" rows="5"></textarea>
             </div>
-            <div>
+            <div className={s.button}>
                 <button onClick={ addPost }>Add post</button>
             </div>
             <div>

@@ -1,6 +1,7 @@
 import s from './Sidebar.module.css';
 import Friendlist from "./Friendlist/Friendlist";
 import Navbar from "./Navbar/Navbar";
+import {BrowserRouter, Route} from "react-router-dom";
 
 const Sidebar = (props) => {
 
@@ -10,10 +11,7 @@ const Sidebar = (props) => {
                 <Navbar state={props.state.navbar}/>
             </div>
             <div>
-                <div className={s.title}>
-                    Friends
-                </div>
-                <Friendlist state={props.state.friendlist}/>
+                <Route path='/profile' render={() => <Friendlist state={props.state.friendlist}/>}/>
             </div>
         </div>
 

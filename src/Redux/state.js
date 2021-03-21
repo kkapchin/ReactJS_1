@@ -29,7 +29,7 @@ let state = {
 
         navbar: [
             {path: '/profile', title: 'Profile'},
-            {path: '/dialogs', title: 'Messenger'},
+            {path: '/messenger', title: 'Messenger'},
             {path: '/news', title: 'News'},
             {path: '/projects', title: 'Projects'},
             {path: '/settings', title: 'Settings'}

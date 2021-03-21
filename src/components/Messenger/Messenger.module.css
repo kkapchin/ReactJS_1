@@ -1,0 +1,17 @@
+.messenger {
+    grid-area: c;
+    background-color: dimgrey;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px;
+}
+
+.chatlist {
+    grid-column: 1/2;
+    border-right: 2px solid rgb(202, 224, 248);
+}
+
+.chat {
+    padding: 10px;
+    grid-column: 2/2;
+}

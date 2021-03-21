@@ -1,6 +1,6 @@
-import s from '../Dialogs.module.css';
+import s from '../../Messenger.module.css';
 import {NavLink} from "react-router-dom";
-import Dialogs from "../Dialogs";
+import Messenger from "../../Messenger";
 
 const MessageItem = (props) => {
     return (

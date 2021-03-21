@@ -15,9 +15,11 @@
     border: 2px solid rgb(202, 224, 248);
 }
 
-.dialogItem .users {
-    grid-area: b;
-    padding: 10px;
+.title {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: darkblue;
 }
 
 .friendlist a {

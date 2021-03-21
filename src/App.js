@@ -1,14 +1,12 @@
 import './App.css';
 import Header from "./components/Header/Header";
-import Navbar from "./components/Sidebar/Navbar/Navbar";
 import Content from "./components/Content/Content";
-import Dialogs from "./components/Dialogs/Dialogs";
+import Messenger from "./components/Messenger/Messenger";
 import {BrowserRouter, Route} from "react-router-dom";
 import News from "./components/News/News";
 import Projects from "./components/Projects/Projects";
 import Settings from "./components/Settings/Settings";
 import {Component} from "react";
-import Friendlist from "./components/Sidebar/Friendlist/Friendlist";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 class App extends Component {
@@ -21,8 +19,8 @@ class App extends Component {
                     <div className="app-wrapper-content">
                         <Route path='/profile' render={() =>
                             <Content state={this.props.state.profilePage} />}/>
-                        <Route path='/dialogs' render={props =>
-                            <Dialogs state={this.props.state.messagesPage} />}/>
+                        <Route path='/messenger' render={props =>
+                            <Messenger state={this.props.state.messagesPage} />}/>
                         <Route path='/news' component={News}/>
                         <Route path='/projects' component={Projects}/>
                         <Route path='/settings' component={Settings}/>
