@@ -18,7 +18,7 @@ class App extends Component {
                     <Sidebar state={this.props.state.sidebar}/>
                     <div className="app-wrapper-content">
                         <Route path='/profile' render={() =>
-                            <Content state={this.props.state.profilePage} />}/>
+                            <Content state={this.props.state.profilePage} addPost={this.props.addPost}/>}/>
                         <Route path='/messenger' render={props =>
                             <Messenger state={this.props.state.messagesPage} />}/>
                         <Route path='/news' component={News}/>

@@ -1,10 +1,17 @@
 import s from './Chat.module.css';
-import ChatlistItem from "../ChatlistItem/ChatlistItem";
+import React from 'react';
 import MessageItem from "./MessageItem/MessageItem";
 
 const Chat = (props) => {
 
+    let newMessage = React.createRef();
+
     let Messages = props.state.map(m => <MessageItem message={m.message}/>);
+
+    let sendMessage = () => {
+        let text = newMessage.current.value;
+        alert(text);
+    }
 
     return (
         <div className={s.chat}>
@@ -13,10 +20,10 @@ const Chat = (props) => {
             </div>
             <div className={s.input}>
                 <div className={s.inputArea}>
-                    <textarea name="" id="" cols="60" rows="5"></textarea>
+                    <textarea ref={ newMessage } cols="60" rows="5"></textarea>
                 </div>
                 <div className={s.btn}>
-                    <button >Send</button>
+                    <button onClick={ sendMessage }>Send</button>
                 </div>
             </div>
         </div>
