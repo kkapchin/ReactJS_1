@@ -7,7 +7,8 @@ let state = {
             {id: 3, message: 'qq yopta', likesCount: 1},
             {id: 2, message: 'All cops are bitches', likesCount: 666},
             {id: 1, message: 'Hello world', likesCount: 13},
-        ]
+        ],
+        newPostElement: ''
     },
 
     messagesPage: {
@@ -47,9 +48,15 @@ let state = {
 
 }
 
-export let addPost = (newPost) => {
-    let newPostObject = {id: 666, message: newPost, likesCount: 0}
+export let addPost = () => {
+    let newPostObject = {id: 666, message: state.profilePage.newPostElement, likesCount: 0}
     state.profilePage.posts.push(newPostObject);
+    state.profilePage.newPostElement = '';
+    renderEntireTree(state);
+}
+
+export let updateNewPostElement = (newPostElement) => {
+    state.profilePage.newPostElement = newPostElement;
     renderEntireTree(state);
 }
 
