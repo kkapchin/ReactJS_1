@@ -1,20 +1,20 @@
-import s from './DialogItem.module.css'
+import s from './FriendlistItem.module.css'
 import {NavLink} from "react-router-dom";
 
-const DialogItem = (props) => {
-    let path = '/dialogs/' + props.id;
+const FriendlistItem = (props) => {
+    let path = '/' + props.id;
     let avatar = props.img;
-    console.log('props', props);
+
     return (
-        <div className={s.dialogItem}>
+        <div className={s.friendlistItem}>
             <div>
                 <img src={avatar} />
             </div>
-            <div className={s.users}>
+            <div className={s.names}>
                 <NavLink to={path} activeClassName={s.active}>{props.name}</NavLink>
             </div>            
         </div>
     );
 }
 
-export default DialogItem;
+export default FriendlistItem;

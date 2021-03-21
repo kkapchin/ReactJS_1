@@ -18,22 +18,31 @@ let state = {
         ],
 
         dialogs: [
-            {id: 1, name: 'Madarka'},
-            {id: 2, name: 'Bloody'},
-            {id: 3, name: 'Dedist'},
-            {id: 4, name: 'Ferich'}
+            {id: 1, name: 'Мадарыч', img: 'https://f4.bcbits.com/img/a3103636681_10.jpg'},
+            {id: 2, name: 'Bloody', img: 'https://avatars.mds.yandex.net/get-zen_doc/177006/pub_5c57346b22d89d00adadb82c_5c57431d25d7b000b1b3af07/scale_1200'},
+            {id: 3, name: 'Dedist', img: 'https://pbs.twimg.com/media/DjaQvzwU8AAuz-P.jpg'},
+            {id: 4, name: 'Ferich', img: 'https://i.pinimg.com/originals/39/a3/3c/39a33c5f178998cc05dce0e4d564f66a.jpg'}
         ]
     },
 
     sidebar: {
+
         navbar: [
             {path: '/profile', title: 'Profile'},
             {path: '/dialogs', title: 'Messenger'},
             {path: '/news', title: 'News'},
             {path: '/projects', title: 'Projects'},
             {path: '/settings', title: 'Settings'}
+        ],
+
+        friendlist: [
+            {id: 1, name: 'Мадарыч', img: 'https://f4.bcbits.com/img/a3103636681_10.jpg'},
+            {id: 2, name: 'Bloody', img: 'https://avatars.mds.yandex.net/get-zen_doc/177006/pub_5c57346b22d89d00adadb82c_5c57431d25d7b000b1b3af07/scale_1200'},
+            {id: 3, name: 'Dedist', img: 'https://pbs.twimg.com/media/DjaQvzwU8AAuz-P.jpg'},
+            {id: 4, name: 'Ferich', img: 'https://i.pinimg.com/originals/39/a3/3c/39a33c5f178998cc05dce0e4d564f66a.jpg'}
         ]
     }
+
 }
 
 export default state;

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Sidebar/Navbar/Navbar";
 import Content from "./components/Content/Content";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
@@ -8,6 +8,8 @@ import News from "./components/News/News";
 import Projects from "./components/Projects/Projects";
 import Settings from "./components/Settings/Settings";
 import {Component} from "react";
+import Friendlist from "./components/Sidebar/Friendlist/Friendlist";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 class App extends Component {
     render () {
@@ -15,7 +17,7 @@ class App extends Component {
             <BrowserRouter>
                 <div className="app-wrapper">
                     <Header/>
-                    <Navbar state={this.props.state.sidebar}/>
+                    <Sidebar state={this.props.state.sidebar}/>
                     <div className="app-wrapper-content">
                         <Route path='/profile' render={() =>
                             <Content state={this.props.state.profilePage} />}/>

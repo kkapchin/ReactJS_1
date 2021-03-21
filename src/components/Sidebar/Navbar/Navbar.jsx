@@ -4,7 +4,7 @@ import NavbarElement from "./NavbarElement/NavbarElement";
 
 const Navbar = (props) => {
 
-    let NavbarElements = props.state.navbar.map(n => <NavbarElement path={n.path} title={n.title} />);
+    let NavbarElements = props.state.map(n => <NavbarElement path={n.path} title={n.title} />);
 
     return (
         <nav className={s.nav}>

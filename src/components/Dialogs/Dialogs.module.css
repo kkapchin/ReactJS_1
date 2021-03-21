@@ -5,23 +5,3 @@
     grid-template-columns: 2fr 10fr;
     padding: 10px;
 }
-
-.dialogs img {
-    width: 350px;
-}
-
-.dialogs users {
-}
-
-.dialogs messages {
-}
-
-.dialogs a {
-    color: black;
-    text-decoration: none;
-}
-
-.dialogs a.active {
-    color: darkblue;
-    text-decoration: none;
-}

@@ -8,19 +8,17 @@ class Dialogs extends Component {
 
     render() {
 
-        let Dialogs = this.props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);
+        let Dialogs = this.props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id} img={d.img}/>);
 
         let Messages = this.props.state.messages.map(m => <MessageItem message={m.message}/>);
 
         return (
             <div className={s.dialogs}>
-                <div className={s.dialogs.users}>
-                    Dialogs
+                <div>
                     { Dialogs }
                 </div>
-                <div className={s.dialogs.messages}>
-                    Messages
-                    {Messages}
+                <div>
+                    { Messages }
                 </div>
             </div>
         );

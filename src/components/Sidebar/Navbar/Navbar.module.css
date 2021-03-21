@@ -1,0 +1,16 @@
+.nav {
+    grid-area: s;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.item a {
+    color: black;
+    text-decoration: none;
+    //font: 'Verdana';
+}
+
+.item a.active {
+    color: darkblue;
+//font: 'Verdana';
+}

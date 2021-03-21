@@ -1,7 +1,16 @@
-.nav {
-    grid-area: n;
+.sidebar {
+    grid-area: s;
+    display: grid;
+    grid-template-rows: 120px 1fr;
     background-color: cadetblue;
     padding: 10px;
+}
+
+.title {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: darkblue;
 }
 
 .item a {
